@@ -1,2 +1,19 @@
 import os
-print("hello") 
+logo = """█▀█ █░█ ▄▀█ █ █░░
+█▄█ █▄█ █▀█ █ █▄▄
+"""
+print(logo)
+print("[1]FOLLOWING")
+num = input(":")
+os.system('clear')
+if num == "1":
+ filename = '007.txt'
+
+line_count = 0
+
+with open(filename, 'r') as file:
+    for line in file:
+        line_count += 1
+
+print(f' {line_count} ILIMIT FOLLOWERS')
+url = input("YOUR URL:")
